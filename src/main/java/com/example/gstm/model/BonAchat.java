@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "bon_achat")
 @Data
 @NoArgsConstructor
 public class BonAchat {

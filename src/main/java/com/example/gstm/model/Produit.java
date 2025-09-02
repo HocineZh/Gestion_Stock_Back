@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
+@Table(name = "produit")
 public class Produit {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,11 +17,9 @@ public class Produit {
     @Column(name = "id", nullable = false)
     private Long id;
 
-
     @Column(name = "nom")
     @Nonnull
     private String nom;
-
 
     @Column(name = "description")
     private String description;
