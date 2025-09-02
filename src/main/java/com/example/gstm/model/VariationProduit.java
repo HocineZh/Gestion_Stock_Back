@@ -14,7 +14,7 @@ public class VariationProduit {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id", nullable = false)
-    private Long id;
+    private int id;
 
     @Column(name = "coleur")
     @Nonnull
